@@ -41,7 +41,7 @@ public class Customer {
     }
 
     public void renew() {
-        // Implement the renew logic based on the specific requirements
+        
         System.out.println("You have renewed your account.");
     }
 
@@ -49,11 +49,12 @@ public class Customer {
         System.out.println("Your current balance is: " + balance);
     }
 
-    // Main method for testing
     public static void main(String[] args) {
-        // Creating a customer object
+        // Creating a customer objects
         Customer localCustomer = new Customer(200, "Omondi", 2000L, "Kenya", "400 Main St", 500.00);
         Customer internationalCustomer = new Customer(400, "Chika", 7986726L, "Egypt", "400 Gaza", 7000.88);
+
+        System.out.println(internationalCustomer.address);
 
 
         // Testing the methods
